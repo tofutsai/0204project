@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>標題 master h1</h1>
     <h1>標題 dev</h1>
@@ -65,5 +67,56 @@
             <td>Home Ec</td>
         </tr>
     </table>
+    <form action="" method="post">
+        <p><label for="userName">userName : </label><input type="text" id="userName" name="userName" maxlength="30" required></p>
+        <p><label for="password">password :</label><input type="password" id="password" name="password" maxlength="30" required></p>
+        <textarea name="comments" id="" cols="20" rows="4" placeholder="enter your comments..."></textarea>
+        <p>Please select your favorite genre :
+            <br>
+            <input type="radio" name="genre" value="rock" id="rock" checked><label for="rock">Rock</label>
+            <input type="radio" name="genre" value="pop" id="pop"><label for="pop">Pop</label>
+            <input type="radio" name="genre" value="jazz" id="jazz"><label for="jazz">Jazz</label>
+        </p>
+        <p>Please select your favorite music service(s) :
+            <br>
+            <input type="checkbox" name="service" value="itunes" checked>iTunes
+            <input type="checkbox" name="service" value="lastfm">Last.fm
+            <input type="checkbox" name="service" value="spotify">Spotify
+        </p>
+        <p>What device do you listen to music on ?</p>
+        <select name="devices" id="">
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+        <p>Do you play any of the following instruments ?</p>
+        <select name="instruments" size="4" multiple id="">
+            <option value="guitar" selected>Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keybord" selected>Keybord</option>
+            <option value="bass">Bass</option>
+        </select>
+        <p>Upload your song in MP3 format</p>
+        <input type="file" name="user-song"><br><br>
+        <input type="submit" value="Upload">
+        <fieldset>
+            <legend>Contact details</legend>
+            <label for="email">Email :</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="mobile">Mobile :</label><br>
+            <input type="text" name="mobile" id="mobile"><br>
+            <label for="telephone">Telephone :</label><br>
+            <input type="text" name="telephone" id="telephone">
+            <label for="url">Url</label>
+            <input type="url" name="website" id="url">
+        </fieldset>
+    </form>
+    
+    <label for="date">Departure date :</label><input type="date" name="depart" id="date">
+    <form action="">
+        <label for="search">Search :<input type="search" id="search" placeholder="enter keyword"></label><br>
+        <input type="submit" value="Search">
+    </form>
 </body>
+
 </html>
