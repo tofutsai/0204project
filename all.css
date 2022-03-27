@@ -11,3 +11,7 @@ h2 {
 p {
   color: #201e1c;
 }
+
+a:active {
+  color: darkcyan;
+}
